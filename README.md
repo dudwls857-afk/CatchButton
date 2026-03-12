@@ -24,3 +24,13 @@
 
 -3단계 코드의 실행 스크린샷
 
+<img width="835" height="547" alt="image" src="https://github.com/user-attachments/assets/f0127fa9-490d-4f25-a6d1-b7fdc25dc5bb" />
+
+<img width="833" height="542" alt="image" src="https://github.com/user-attachments/assets/70e1c3b3-867f-4a54-9423-4d41de7d615c" />
+
+
+-클릭할때마다 버튼 크기 축소 설정 및 점수 계산 
+
+-4단계 코드의 실행 스크린샷
+
+
