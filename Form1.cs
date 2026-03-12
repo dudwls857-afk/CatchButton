@@ -24,8 +24,8 @@ namespace CatchButton
 
             // 2. 가용영역계산(버튼이폼테두리에걸리지않게보호)
             // ClientSize는타이틀바와테두리를제외한실제흰도화지영역임
-            int maxX = this.ClientSize.Width; 
-            int maxY = this.ClientSize.Height;
+            int maxX = this.ClientSize.Width-Target.Width; 
+            int maxY = this.ClientSize.Height-Target.Height;
 
             // 3. 랜덤좌표추출(0 ~ 최대가용치사이)
             int nextX= rd.Next(0, maxX);
