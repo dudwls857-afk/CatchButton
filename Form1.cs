@@ -21,6 +21,7 @@ namespace CatchButton
         private void Form1_Load(object sender, EventArgs e)
         {
             Reset.Visible = false;
+           
             score = 0;
             missCount = 0;
 
@@ -51,6 +52,7 @@ namespace CatchButton
             {
                 MessageBox.Show("Game Over");
                 Target.Enabled = false;
+                Reset.Visible = true;
             }
             // 소리 출력
             System.Media.SystemSounds.Beep.Play();
@@ -76,7 +78,16 @@ namespace CatchButton
 
         private void Reset_Click_1(object sender, EventArgs e)
         {
+            score = 0;
+            missCount = 0;
 
+            Target.Enabled = true;
+            Target.Width = 400;
+            Target.Height = 300;
+
+            Target.Location = new Point(100, 100);
+
+            this.Text = $"점수:{score} / 놓친 횟수:{missCount}";
         }
     }
 }
