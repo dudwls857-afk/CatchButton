@@ -28,18 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Target = new Button();
             SuspendLayout();
+            // 
+            // Target
+            // 
+            Target.BackColor = Color.Black;
+            Target.Font = new Font("맑은 고딕", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            Target.ForeColor = Color.Red;
+            Target.Location = new Point(204, 175);
+            Target.Name = "Target";
+            Target.Size = new Size(420, 150);
+            Target.TabIndex = 0;
+            Target.Text = "나를 잡아봐";
+            Target.UseVisualStyleBackColor = false;
+            Target.Click += button1_Click;
+            Target.MouseEnter += Target_MouseEnter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(835, 526);
+            Controls.Add(Target);
             Name = "Form1";
-            Text = "Form1";
+            RightToLeftLayout = true;
+            Text = "버튼을 잡아라!";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button Target;
     }
 }
