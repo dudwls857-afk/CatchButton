@@ -9,7 +9,7 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("축하합니다~!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,6 +33,8 @@ namespace CatchButton
 
             // 4. 위치할당(새로운Point 객체생성)
             Target.Location= new Point(nextX, nextY);
+            // 소리 출력
+            System.Media.SystemSounds.Beep.Play();
 
             // 5. 시각적피드백(폼제목표시줄에좌표출력)
             this.Text= $"버튼위치: ({nextX}, {nextY})";
