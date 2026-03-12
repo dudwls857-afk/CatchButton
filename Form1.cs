@@ -2,6 +2,7 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        int score = 0;
         public Form1()
         {
             InitializeComponent();
@@ -9,7 +10,11 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
+            score += 100;
             MessageBox.Show("축하합니다~!");
+            this.Text = $"점수 : {score}";
+            Target.Width = (int)(Target.Width * 0.9);
+            Target.Height = (int)(Target.Height * 0.9);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,6 +38,8 @@ namespace CatchButton
 
             // 4. 위치할당(새로운Point 객체생성)
             Target.Location= new Point(nextX, nextY);
+            score -= 10;
+            this.Text = "점수: {score}";
             // 소리 출력
             System.Media.SystemSounds.Beep.Play();
 
