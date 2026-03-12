@@ -11,5 +11,16 @@
 -버튼 이름을 Target 텍스트는 나를 잡아봐
 ## 실행 화면
 -1단계 코드의 실행 스크린샷
+
 <img width="828" height="548" alt="image" src="https://github.com/user-attachments/assets/4c36f446-619b-4def-abfb-15164c953507" />
+
 -버튼의랜덤이동과 화면내로 제한
+
+-2단계 코드의 실행 스크린샷
+
+<img width="828" height="548" alt="image" src="https://github.com/user-attachments/assets/3795122f-91f2-4183-b484-afda0a9d42d8" />
+
+-버튼을 클릭시 축하합니다~! 창이 뜨도록 설정
+
+-3단계 코드의 실행 스크린샷
+
