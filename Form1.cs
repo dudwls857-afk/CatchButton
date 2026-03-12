@@ -87,7 +87,9 @@ namespace CatchButton
 
             Target.Location = new Point(100, 100);
 
+
             this.Text = $"점수:{score} / 놓친 횟수:{missCount}";
+            Reset.Visible = true;
         }
     }
 }
